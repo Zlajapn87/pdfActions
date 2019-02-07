@@ -26,9 +26,9 @@ public class WriteToPdf {
         System.out.println("List of the fields is: " +fields);
         
         form.removeXfa();
-        form.setField("Name_First", "Ratko");
-        form.setField("Name_Last", "Zekic");
-        form.setField("Name_Middle", "XXX");
+        form.setField("Name_First", "Nikola");
+        form.setField("Name_Last", "Zlatkovic");
+        form.setField("Name_Middle", "Zlaja");
         stamper.close();
         reader.close();
     }
