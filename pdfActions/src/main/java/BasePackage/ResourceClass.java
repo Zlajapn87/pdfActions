@@ -2,7 +2,8 @@ package BasePackage;
 
 public class ResourceClass {
 	
-	private String SRC = "C:\\Users\\nikola.zlatkovic\\Desktop\\Selenium\\Test\\interactiveform_enabled.pdf";
+	// private String SRC = "C:\\Users\\nikola.zlatkovic\\Desktop\\Selenium\\Test\\interactiveform_enabled.pdf";
+	private String SRC = "..\\pdfActions\\src\\main\\resources\\pdfFiles\\interactiveform_enabled.pdf";
     private String DEST = "C:\\Users\\nikola.zlatkovic\\Desktop\\Selenium\\\\Test\\TestPDF.pdf";
     
     public  String getSRC() {
