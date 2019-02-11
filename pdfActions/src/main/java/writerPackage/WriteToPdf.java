@@ -1,9 +1,8 @@
-package writerPackage;
 
+package writerPackage;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Map;
-
 import com.itextpdf.text.DocumentException;
 import com.itextpdf.text.pdf.AcroFields;
 import com.itextpdf.text.pdf.PdfReader;
@@ -20,15 +19,15 @@ public class WriteToPdf {
         PdfStamper stamper = new PdfStamper(reader, new FileOutputStream(dest));
         AcroFields form = stamper.getAcroFields();
         
-        System.out.println("Stamper list is: " +stamper);
+      //  System.out.println("Stamper list is: " +stamper);
         
         Map<String, Item> fields = form.getFields();
-        System.out.println("List of the fields is: " +fields);
+     //   System.out.println("List of the fields is: " +fields);
         
         form.removeXfa();
         form.setField("Name_First", "Nikola");
         form.setField("Name_Last", "Zlatkovic");
-        form.setField("Name_Middle", "Zlaja");
+        form.setField("Name_Middle", "Ljubisa");
         stamper.close();
         reader.close();
     }
